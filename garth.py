@@ -29,5 +29,5 @@ class BMX(Vehicle):
         self.color = color
 
 
-    def print_speed(self):
-        print(f"Current Speed: {self.speed}")
+    def print_color(self):
+        print(f"Current Color: {self.color}")

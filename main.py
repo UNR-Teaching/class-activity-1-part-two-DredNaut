@@ -3,7 +3,13 @@ from wayne import Pinto
 from garth import BMX
 
 def main():
-    Pinto('Blue')
-    BMX('White')
+
+    wayne = Pinto('Blue')
+    wayne.print_speed()
+    wayne.print_color()
+
+    garth = BMX('White')
+    garth.print_speed()
+    garth.print_color()
 
 main()

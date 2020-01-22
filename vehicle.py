@@ -11,3 +11,8 @@ class Vehicle(ABC):
     @abstractmethod
     def print_speed(self):
         pass
+
+
+    @abstractmethod
+    def print_color(self):
+        pass
