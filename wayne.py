@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 from wheel import Wheel
 from vehicle import Vehicle
+from engine import Engine
 
 class Pinto(Vehicle):
     def __init__(self, color):
-        self.wheel = Wheel(25) 
+        self.wheel = Wheel(25)
         self.engine = Engine(2.8)
         self.speed = 0.0
         self.color = color
@@ -12,9 +13,9 @@ class Pinto(Vehicle):
     def start(self):
         self.engine.turn_on()
 
-    def stop(self): 
+    def stop(self):
         self.engine.turn_off()
-    
+
     def accelerate(self):
         if self.speed < 55:
             self.speed += 1.0

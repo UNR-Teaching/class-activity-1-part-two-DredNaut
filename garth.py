@@ -2,11 +2,11 @@
 from wheel import Wheel
 from vehicle import Vehicle
 
-class BMX(ABC):
+class BMX(Vehicle):
 
-    def __init__(u_color):
-        self.front_wheel = Wheel(16) 
-        self.rear_wheel = Wheel(16) 
+    def __init__(self,u_color):
+        self.front_wheel = Wheel(16)
+        self.rear_wheel = Wheel(16)
         self.pedal = True
         self.handlebars = True
         self.frame = True
@@ -16,12 +16,12 @@ class BMX(ABC):
 
 
     def pedal(self):
-        if self.front_wheel and self.rear_wheel and self.pedal and self.frame and (! self.speed > 30 ):
+        if self.front_wheel and self.rear_wheel and self.pedal and self.frame and ( not self.speed > 30 ):
             self.speed += 1
 
 
     def brake(self):
-        if self.handlebars and self.front_wheel and self.rear_wheel and self.brakes and self.frame and (! self.speed < 0 ):
+        if self.handlebars and self.front_wheel and self.rear_wheel and self.brakes and self.frame and (not self.speed < 0 ):
             self.speed -= 1
 
 
