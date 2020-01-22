@@ -1,4 +1,8 @@
 # Class Activity 1 part two
+Contributors: 
+
+Jared Knutson  
+Clayton Franklin  
 
 Your first paired programming problem!
 
